@@ -123,6 +123,7 @@ predictions = xgb_predictor.predict(test_data_array).decode('utf-8')            
 predictions_array = np.fromstring(predictions[1:], sep=',')                       # and turn the prediction into an array
 print(predictions_array.shape)
 
+##Print Prediction_array
 predictions_array
 
 ## confusion matrix
